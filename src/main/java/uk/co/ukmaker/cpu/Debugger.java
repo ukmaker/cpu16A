@@ -4,6 +4,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import uk.co.ukmaker.cpu.assembler.Assembler;
+
 public class Debugger {
 	
 	private Set<Integer> breakpoints = new HashSet<Integer>();

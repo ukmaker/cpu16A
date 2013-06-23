@@ -2,6 +2,8 @@ package uk.co.ukmaker.cpu;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import uk.co.ukmaker.cpu.assembler.Assembler;
 import static uk.co.ukmaker.cpu.Opcode.*;
 import static uk.co.ukmaker.cpu.OpcodeBits.*;
 import static uk.co.ukmaker.cpu.RegisterFile.*;

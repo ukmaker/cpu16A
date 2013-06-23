@@ -1,9 +1,30 @@
-package uk.co.ukmaker.cpu;
+package uk.co.ukmaker.cpu.assembler;
+
+import java.util.List;
+
+import uk.co.ukmaker.cpu.Memory;
+import uk.co.ukmaker.cpu.Opcode;
+import uk.co.ukmaker.cpu.OpcodeBits;
+
+/**
+ * 
+ * Address LOOP = new Address();
+ * 
+ * a.op(JR, LOOP, CC_NONE);
+ * ..
+ * ..
+ * LOOP.$(a.op(ADD R_0, R_1, CC_NONE));
+ * 
+ * 
+ * @author duncan
+ *
+ */
 
 public class Assembler {
 
 	private Memory memory;
 	private int addr = 0;
+	
 	
 	public void setMemory(Memory m) {
 		memory = m;
